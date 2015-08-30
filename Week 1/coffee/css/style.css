@@ -1,0 +1,49 @@
+body {
+    font: 16px/26px Helvetica, Helvetica, Arial;
+}
+
+.main {
+    margin: 10px;
+    height: 415px;
+}
+
+.head {
+    position: relative;
+    background-color: #c93042;
+    width: 640px;
+    height: 150px;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: serif;
+    text-align: center;
+}
+
+#coupon {
+    position: fixed;
+    background-color: #f15267;
+    left: 375px;
+    height: 200px;
+    width: 230px;
+    top: 192px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    line-height: 130%;
+    z-index: 1;
+    
+}
+
+#button {
+    background-color: #ffc5c1;
+    border-radius: 18px;
+    height: 55px;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 2px;
+    line-height: 180%;
+    color: #673037;
+    font-family: serif;
+    z-index: 2;
+}
