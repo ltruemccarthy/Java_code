@@ -55,7 +55,17 @@ for (var i = 0; i < speechesArray.length; i++) {
 }
 }});
 
-
+var oldestYear = speechesArray[0].year;
+var recentYear = speechesArray[0].year;
+for(var i = 0; i < speechesArray.length; i++){
+   
+    if(speechesArray[i].year < recentYear){
+      oldestYear = speechesArray[i].year;
+    }
+    if(speechesArray[i].year > oldestYear){
+      recentYear = speechesArray[i].year;
+    }
+  }
 
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
