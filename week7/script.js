@@ -1,4 +1,7 @@
 //For readability and clarity it is good practice to declare variables at the beginning of the JS document if possible
+//Authored by: Anthony Peruzzo, Leah Bateman, Kelly Horigan
+//Modified by: Laurel True-McCarthy
+
 var churchillSpeech = {
       'author': 'Churchill',
       'year': 1940,
