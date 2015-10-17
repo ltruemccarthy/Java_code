@@ -1,6 +1,13 @@
+
+//added the onlick function with help from Xianning
+
 function changeText (){
-	var newText = document.getElementById('multiply');
-	multiply.innerHTML = "I do because I'm kind of a genius";
-}
+	document.getElementById('multiply').addEventListener('click', function(){
+		if (document.getElementById('multiply')){
+			multiply.innerHTML = "I do because I'm kind of a genius";
+		}
+	});
+
+};
 
 changeText();
