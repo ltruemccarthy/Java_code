@@ -4,11 +4,39 @@
 <title>The Landon Hotel</title>
 <link rel="stylesheet" href="style/style.css">
 <script src="../../jquery-1.11.1.js"></script>
+<script src="../../jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//how I get the rotation function to be called every three seconds- one fading up in front of the previous one-- hint: z-index of 2 for current means that the current picture will appear in front of the previous one
+    		setInterval("rotateImages()", 3000);
+    	});
+
+		function rotateImages(){
+			//get the current photo inside the hero div
+			var oCurPhoto = $('#hero div.current');
+			//to get the photo next to it we call the next function to call the next sibling
+			var oNxtPhoto = oCurPhoto.next();
+			//if there is no sibling (reached the end of the list) we need to loop back to the first div
+			if (oNxtPhoto.length == 0)
+				oNxtPhoto = $('#hero div:first');
+
+			//now we get to animate the photos. We need to move the current image behind by removing the class
+			oCurPhoto.removeClass('current').addClass('previous');
+			//then set the opacity to 0 so that we can fade it in- then we add the current class
+			oNxtPhoto.css({ opacity: 0.0}).addClass('current')
+			//bring the opacity of the image over 1 second to 100% opacity
+				.animate({ opacity: 1.0}, 1000, 
+					//then remove the previous stylesheet
+					function(){
+					oCurPhoto.removeClass('previous');
+				});
+		}
+		</script>
 </head>
 <body>
 	<div class="container">
 		<div class="header"><img src="img/header.png"></div>
-        <div id="hero">
+        <div id="hero">  
             <div class="current"><img src="img/HomePageImages/Paris.jpg"></div>
             <div><img src="img/HomePageImages/Paris-2.jpg"></div>
             <div><img src="img/HomePageImages/Hong-Kong.jpg"></div>
