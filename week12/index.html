@@ -1,0 +1,261 @@
+<!--Authored by: Laurel True-McCarthy with help from Samantha Knissens code. I really like the idea to hide everything but the recipe called with the "not" code.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>True Family Recipes</title>
+<link rel="stylesheet" href="style/style.css">
+<script src="../jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+    	  $(function() {
+            // create the image rotator
+            setInterval("rotateImages()", 3000);
+        });
+
+        function rotateImages() {
+            var oCurPhoto = $('#hero div.current');
+            var oNxtPhoto = oCurPhoto.next();
+            if (oNxtPhoto.length == 0)
+                oNxtPhoto = $('#hero div:first');
+
+            oCurPhoto.removeClass('current').addClass('previous');
+            oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
+                    .animate({ opacity: 1.0 }, 1000,
+                                function() {
+                                    oCurPhoto.removeClass('previous');
+                                });
+
+        $("#apple1").click(function() {
+        $("#apple").show("fast");
+        $('.recipe:not(#apple)').hide();
+    });
+    $("#muffins1").click(function() {
+        $("#muffins").show("slow");
+        $('.recipe:not(#muffins)').hide();
+    });
+    $("#brine1").click(function() {
+        $("#brine").show("fast");
+        $('.recipe:not(#brine)').hide();
+    });
+    $("#pork1").click(function() {
+        $("#pork").show("slow");
+        $('.recipe:not(#chilli)').hide();
+    });
+    $("#chilli1").click(function() {
+        $("#pork").show("fast");
+        $('.recipe:not(#pork)').hide();
+    });
+    $("#mojito1").click(function() {
+        $("#mojito").show("slow");
+        $('.recipe:not(#mojito)').hide();
+    });
+    $("#soup1").click(function() {
+        $("#soup").show("fast");
+        $('.recipe:not(#soup)').hide();
+    });
+		}
+		</script>
+</head>
+<body>
+	<div class="container">
+        <div id="hero">  
+            <div class="current"><img src="img/apple.jpg"></div>
+            <div><img src="img/brine.jpg"></div>
+            <div><img src="img/pork.jpg"></div>
+            <div><img src="img/chilli.jpg"></div>
+            <div><img src="img/mojito.jpg"></div>
+            <div><img src="img/soup.jpg"></div>
+        </div>
+
+<nav class="main-navigation" role="navigation">
+<div>
+<ul id="menu-main-menu" class="nav-menu">
+<li id="apple1"><a href="#apple">Sarah's Applesauce</a></li>
+<li id="muffins1"><a href="#muffins">Morning Glory Muffins</a></li>
+<li id="brine1"><a href="#brine">Out of this World Turkey Brine</a></li>
+<li id="pork1"><a href="#pork">Glenn's Marinated Pork Shoulder</a></li>
+<li id="chilli1"><a href="#chilli">White Chili</a></li>
+<li id="mojito1"><a href="#mojito">Mojito Fruit Salad</a></li>
+<li id="soup1"><a href="#soup">Vegan Hot and Sour Soup</a></li>
+</ul></div>
+</nav>
+		
+
+		<div class="content">
+		<article id="apple" class="recipe">
+		
+<h1>Sarah's Applesauce</h1>
+<h2>Prep Time: 10 Minutes</h2>
+<h2>Cook Time: 20 Minutes</h2>
+<h2>Ready In: 30 Minutes</h2>
+<h2>Servings: 4</h2>
+<h3>"This applesauce is delicious! I make it for my younger brother all the time. He loves it, and he hates canned applesauce!"</h3>
+<p>INGREDIENTS:</p>
+<p>4 apples - peeled, cored and chopped</p>
+<p>3/4 cup water</p>
+<p>1/4 cup white sugar</p>
+<p>1/2 teaspoon ground cinnamon</p>
+<p>DIRECTIONS:</p>
+<p>1.	In a saucepan, combine apples, water, sugar, and cinnamon. Cover, and cook over medium heat for 15 to 20 minutes, or until apples are soft. Allow to cool, then mash with a fork or potato masher.</p>
+</article>
+
+<article id="muffins" class="recipe">
+<h1>Morning Glory Muffins I</h1>
+<h2>Prep Time: 15 Minutes</h2>
+<h2>Cook Time: 20 Minutes</h2>
+<h2>Ready In: 35 Minutes</h2>
+<h2>Servings: 18</h2>
+<h3>"This muffin has a little bit of everything - carrots, raisins, apple butter, wheat germ, nuts. A perfect start for your day!"</h3>
+<p>INGREDIENTS:</p>
+<p>1 1/2 cups all-purpose flour</p>
+<p>1/2 cup whole wheat flour</p>
+<p>1 1/4 cups white sugar</p>
+<p>1 tablespoon ground cinnamon</p>
+<p>2 teaspoons baking powder</p>
+<p>1/2 teaspoon baking soda</p>
+<p>1/2 teaspoon salt</p>
+<p>2 cups grated carrots</p>
+<p>1 apple - peeled, cored, and chopped</p>
+<p>1 cup raisins</p>
+<p>1 egg</p>
+<p>2 egg whites</p>
+<p>1/2 cup apple butter</p>
+<p>1/4 cup vegetable oil</p>
+<p>1 tablespoon vanilla extract</p>
+<p>2 tablespoons chopped walnuts</p>
+<p>2 tablespoons toasted wheat germ</p>
+<p>DIRECTIONS:</p>
+<p>1.	Preheat oven to 375 degrees F (190 degrees C). Lightly oil 18 muffin cups, or coat with nonstick cooking spray.</p>
+<p>2.	In a medium bowl, whisk together eggs, egg whites, apple butter, oil and vanilla.</p>
+<p>3.	In a large bowl, stir together flours, sugar, cinnamon, baking powder, baking soda and salt. Stir in carrots, apples and raisins. Stir in apple butter mixture until just moistened. Spoon the batter into the prepared muffin cups, filling them about 3/4 full.</p>
+<p>4.	In a small bowl, combine walnuts and wheat germ; sprinkle over the muffin tops.</p>
+<p>5.	Bake at 375 degrees F (190 degrees C) for 15 to 20 minutes, or until the tops are golden and spring back when lightly pressed.</p>
+</article>
+
+<article id="brine" class="recipe">
+<h1>Out of this World Turkey Brine</h1>
+<h2>Servings: 12</h2>
+<h3>"Best brine for smoked turkey around. This recipe was given to me by my uncle. He is always smoking meat."</h3>
+<p>INGREDIENTS:</p>
+<p>2 gallons water</p>
+<p>1 1/2 cups canning salt</p>
+<p>3 tablespoons minced garlic</p>
+<p>1 tablespoon ground black pepper</p>
+<p>1/4 cup Worcestershire sauce</p>
+<p>1/3 cup brown sugar</p>
+<p>DIRECTIONS:</p>
+<p>1.	In a large bucket or container large enough to hold your turkey, mix together the water, salt, garlic, pepper, Worcestershire sauce and brown sugar. Store in a refrigerator, and soak turkey for 2 days before smoking or roasting.</p>
+</article>
+
+<article id="chilli" class="recipe">
+<h1>White Chili IV</h1>
+<h2>Prep Time: 1 Hour</h2>
+<h2>Cook Time: 1 Hour 30 Minutes</h2>
+<h2>Ready In: 2 Hours 30 Minutes</h2>
+<h2>Servings: 8</h2>
+<h3>"Cubed chicken breast meat is slowly simmered with chile peppers, bell peppers, mushrooms, beans, white wine, herbs and spices in this chili-like soup."</h3>
+<p>INGREDIENTS:</p>
+<p>1 tablespoon olive oil</p>
+<p>4 skinless, boneless chicken breast
+halves - cubed</p>
+<p>coarsely ground black pepper to taste</p>
+<p>1 large onion, chopped</p>
+<p>6 cloves garlic, minced</p>
+<p>3 green chile peppers, seeded and
+minced</p>
+<p>1 green bell pepper, chopped</p>
+<p>1 red bell pepper, chopped</p>
+<p>1 (8 ounce) package mushrooms, sliced</p>
+<p>3 (15 ounce) cans pinto beans</p>
+<p>4 green onions, chopped</p>
+<p>1 bunch fresh parsley, chopped</p>
+<p>DIRECTIONS:</p>
+<p>1.	In a large pot over medium-high heat, cook chicken in olive oil with black pepper until brown. Stir in onion, garlic and chiles and cook until onion begins to soften.</p>
+<p>2.	Stir in bell peppers, mushrooms, beans, green onions and parsley. Pour in wine and chicken broth. Season with bouillon, rosemary, thyme, oregano and cumin. Place bay leaves in pot, cover, reduce heat and simmer 90 minutes.</p>
+</article>
+
+<article id="pork" class="recipe">
+</h1>Glenn's Marinated Pork Shoulder</h1>
+</h2>Prep Time: 15 Minutes</h2>
+</h2>Cook Time: 3 Hours</h2>
+</h2>Ready In: 7 Hours 15 Minutes</h2>
+</h2>Servings: 8</h2>
+<h3>"This tangy marinade for grilled pork shoulder is swimming with spices. You'll really taste the garlic!"</h3>
+<p>INGREDIENTS:</p>
+<p>1/4 cup chopped garlic</p>
+<p>1/2 cup chopped onion</p>
+<p>1 dash soy sauce</p>
+<p>1 tablespoon corn syrup</p>
+<p>2 tablespoons apple juice</p>
+<p>3 tablespoons Worcestershire sauce</p>
+<p>1 teaspoon molasses</p>
+<p>DIRECTIONS:</p>
+<p>1.	In a large bowl, mix garlic, onion, soy sauce, corn syrup, apple juice, Worcestershire sauce, molasses, wine, Italian-style salad dressing, distilled white vinegar, garlic powder, salt, onion powder, Cajun seasoning, crushed red pepper, seasoning salt and brown sugar.</p>
+<p>2.	Score pork shoulder 1/8 to 1/4 inch deep. Place in the bowl with the marinade mixture. Marinate at least 4 hours in the refrigerator.</p>
+<p>3.	Preheat an outdoor grill for medium high heat and lightly oil grate.</p>
+<p>4.	Cook marinated pork shoulder on the prepared grill 3 hours, or until the internal temperature has reach a minimum of 165 degrees F (75 degrees C). Marinate frequently with the mixture while grilling.</p>
+</article>
+
+<div id="mojito" class="recipe">
+<h1>Mojito Fruit Salad</h1>
+<h2>Prep Time: 20 Minutes</h2>
+<h2>Ready In: 1 Hour 20 Minutes</h2>
+<h2>ervings: 6</h2>
+<h3>"This uniquely refreshing minty salad has the refreshing flavors of mojitos and fresh fruit."</h3>
+<p>INGREDIENTS:</p>
+<p>1 cup cubed seeded watermelon</p>
+<p>1 cup seedless grapes</p>
+<p>1 cup cubed cantaloupe</p>
+<p>1 cup hulled and quartered strawberries</p>
+<p>1 cup peeled and quartered kiwi</p>
+<p>1 cup fresh blueberries</p>
+<p>DIRECTIONS:</p>
+<p>1.	Mix the watermelon, grapes, cantaloupe, strawberries, and kiwi in a bowl with a tight-fitting lid; top with the blueberries.</p>
+<p>2.	Stir the mint, sugar, and lime juice together in a bowl, crushing the mint with the back of a spoon while mixing to extract flavors; pour over the fruit mixture. Seal the bowl with lid and refrigerate at least 1 hour.</p>
+<p>3.	Just before serving, gently flip the sealed bowl several times to coat the fruit with the dressing.</p>
+</article>
+
+
+<article id="soup" class="recipe">
+<h1>Vegan Hot and Sour Soup</h1>
+<h2>Prep Time: 45 Minutes</h2>
+<h2>Cook Time: 15 Minutes</h2>
+<h2>Ready In: 1 Hour</h2>
+<h2>Servings: 4</h2>
+<h3>"A mushroom and tofu extravaganza! The exotic ingredients in this enticing soup may be found in Asian grocery stores. Don't let the extra effort keep you from trying this tasty treat!"</h3>
+<p>INGREDIENTS:</p>
+<p>1 ounce dried wood ear mushrooms</p>
+<p>4 dried shiitake mushrooms</p>
+<p>12 dried tiger lily buds</p>
+<p>2 cups hot water</p>
+<p>1/3 ounce bamboo fungus</p>
+<p>3 tablespoons soy sauce</p>
+<p>5 tablespoons rice vinegar</p>
+<p>1/4 cup cornstarch</p>
+<p>1 (8 ounce) container firm tofu, cut into 1</p>
+<p>/4 inch strips</p>
+<p>1 quart vegetable broth</p>
+<p>1/4 teaspoon crushed red pepper flakes</p>
+<p>1/2 teaspoon ground black pepper</p>
+<p>3/4 teaspoon ground white pepper</p>
+<p>1/2 tablespoon chili oil</p>
+<p>1/2 tablespoon sesame oil</p>
+<p>1 green onion, sliced</p>
+<p>1 cup Chinese dried mushrooms</p>
+<p>DIRECTIONS:</p>
+<p>1.	In a small bowl, place wood mushrooms, shiitake mushrooms, and lily buds in 1 1/2 cups hot water. Soak 20 minutes, until rehydrated. Drain, reserving liquid. Trim stems from the mushrooms, and cut into thin strips. Cut the lily buds in half.</p>
+<p>2.	In a separate small bowl, soak bamboo fungus in 1/4 cup lightly salted hot water. Soak about 20 minutes, until rehydrated. Drain, and mince.</p>
+<p>3.	In a third small bowl, blend soy sauce, rice vinegar, and 1 tablespoon cornstarch. Place 1/2 the tofu strips into the mixture.</p>
+<p>4.	In a medium saucepan, mix the reserved mushroom and lily bud liquid with the vegetable broth. Bring to a boil, and stir in the wood mushrooms, shiitake mushrooms, and lily buds. Reduce heat, and simmer 3 to 5 minutes. Season with red pepper, black pepper, and white pepper.</p>
+<p>5.	In a small bowl, mix remaining cornstarch and remaining water. Stir into the broth mixture until thickened.</p>
+<p>6.	Mix soy sauce mixture and remaining tofu strips into the saucepan. Return to boil, and stir in the bamboo fungus, chili oil, and sesame oil. Garnish with green onion to serve.</p>
+</article>
+</div>
+
+
+
+
+
+	</div>
+</body>
+</html>
