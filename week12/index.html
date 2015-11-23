@@ -24,26 +24,41 @@
                                 function() {
                                     oCurPhoto.removeClass('previous');
                                 });
+          
+       
 
-        $("#apple1").click(function() {
+           $("#apple1").click(function() {
         $("#apple").show("fast");
         $('.recipe:not(#apple)').hide();
     });
+
     $("#muffins1").click(function() {
         $("#muffins").show("slow");
         $('.recipe:not(#muffins)').hide();
     });
+
+     $("#muffins2").click(function() {
+        $("#muffins_gf").show("fast");
+        $('.recipe:not(#muffins_gf)').hide();
+    });
+
     $("#brine1").click(function() {
         $("#brine").show("fast");
         $('.recipe:not(#brine)').hide();
     });
+
+    $("#brine2").click(function() {
+        $("#brine_veg").show("fast");
+        $('.recipe:not(#brine_veg)').hide();
+    });
+
     $("#pork1").click(function() {
         $("#pork").show("slow");
         $('.recipe:not(#chilli)').hide();
     });
     $("#chilli1").click(function() {
-        $("#pork").show("fast");
-        $('.recipe:not(#pork)').hide();
+        $("#chilli").show("fast");
+        $('.recipe:not(#chilli)').hide();
     });
     $("#mojito1").click(function() {
         $("#mojito").show("slow");
@@ -53,6 +68,7 @@
         $("#soup").show("fast");
         $('.recipe:not(#soup)').hide();
     });
+
 		}
 		</script>
 </head>
@@ -79,17 +95,20 @@
 <li id="soup1"><a href="#soup">Vegan Hot and Sour Soup</a></li>
 </ul></div>
 </nav>
+
+        
 		
 
 		<div class="content">
 		<article id="apple" class="recipe">
 		
 <h1>Sarah's Applesauce</h1>
-<h2>Prep Time: 10 Minutes</h2>
-<h2>Cook Time: 20 Minutes</h2>
-<h2>Ready In: 30 Minutes</h2>
-<h2>Servings: 4</h2>
-<h3>"This applesauce is delicious! I make it for my younger brother all the time. He loves it, and he hates canned applesauce!"</h3>
+<h2> This recipe is vegetarian and gluten free!</h2>
+<h3>Prep Time: 10 Minutes</h3>
+<h3>Cook Time: 20 Minutes</h3>
+<h3>Ready In: 30 Minutes</h3>
+<h3>Servings: 4</h3>
+<h4>"This applesauce is delicious! I make it for my younger brother all the time. He loves it, and he hates canned applesauce!"</h4>
 <p>INGREDIENTS:</p>
 <p>4 apples - peeled, cored and chopped</p>
 <p>3/4 cup water</p>
@@ -99,13 +118,16 @@
 <p>1.	In a saucepan, combine apples, water, sugar, and cinnamon. Cover, and cook over medium heat for 15 to 20 minutes, or until apples are soft. Allow to cool, then mash with a fork or potato masher.</p>
 </article>
 
+
+
 <article id="muffins" class="recipe">
 <h1>Morning Glory Muffins I</h1>
-<h2>Prep Time: 15 Minutes</h2>
-<h2>Cook Time: 20 Minutes</h2>
-<h2>Ready In: 35 Minutes</h2>
-<h2>Servings: 18</h2>
-<h3>"This muffin has a little bit of everything - carrots, raisins, apple butter, wheat germ, nuts. A perfect start for your day!"</h3>
+<li id="muffins2"><a href="#muffins_gf">Gluten Free Option</a></li>
+<h3>Prep Time: 15 Minutes</h3>
+<h3>Cook Time: 20 Minutes</h3>
+<h3>Ready In: 35 Minutes</h3>
+<h3>Servings: 18</h3>
+<h4>"This muffin has a little bit of everything - carrots, raisins, apple butter, wheat germ, nuts. A perfect start for your day!"</h4>
 <p>INGREDIENTS:</p>
 <p>1 1/2 cups all-purpose flour</p>
 <p>1/2 cup whole wheat flour</p>
@@ -132,10 +154,37 @@
 <p>5.	Bake at 375 degrees F (190 degrees C) for 15 to 20 minutes, or until the tops are golden and spring back when lightly pressed.</p>
 </article>
 
+<article id="muffins_gf" class="recipe">
+<h1>Morning Glory Muffins</h1>
+<h2> This Recipe is Gluten Free and Vegetarian </h2>
+<h3>Prep Time: 15 Minutes</h3>
+<h3>Cook Time: 20 Minutes</h3>
+<h3>Ready In: 35 Minutes</h3>
+<h3>Servings: 12</h3>
+<h4>"You'd never be able to tell that this muffin is gluten free, unless you read the ingredients!"</h4>
+<p>INGREDIENTS:</p>
+<p>1/3 cup sugar</p>
+<p>1 cup rice flour</p>
+<p>1 teaspoon baing powder</p>
+<p>3/4 teaspoon salt</p>
+<p>1/2 teaspoon bicarbonate of soda</p>
+<p>2 eggs</p>
+<p>2 tablespoons canola oil</p>
+<p>1 apple - peeled, cored, and chopped</p>
+<p>teaspoon cinnamon</p>
+<p>DIRECTIONS:</p>
+<p>1.   Combine the dry ingredients in a bowl.</p>
+<p>2.   Mix the wet ingredients in another bowl and quickly add to the dry ingredients.</p>
+<p>3.   Add any additional flavourings and stir very briefly.</p>
+<p>4.   Put into greased or paper lined muffin cups and bake in a moderate oven (180 degrees) until golden and firm to the touch.</p>
+</article>
+
+
 <article id="brine" class="recipe">
 <h1>Out of this World Turkey Brine</h1>
-<h2>Servings: 12</h2>
-<h3>"Best brine for smoked turkey around. This recipe was given to me by my uncle. He is always smoking meat."</h3>
+<li id="brine2"><a href="#brine_veg">Vegetarian Option</a></li>
+<h3>Servings: 12</h3>
+<h4>"Best brine for smoked turkey around. This recipe was given to me by my uncle. He is always smoking meat."</h4>
 <p>INGREDIENTS:</p>
 <p>2 gallons water</p>
 <p>1 1/2 cups canning salt</p>
@@ -147,13 +196,32 @@
 <p>1.	In a large bucket or container large enough to hold your turkey, mix together the water, salt, garlic, pepper, Worcestershire sauce and brown sugar. Store in a refrigerator, and soak turkey for 2 days before smoking or roasting.</p>
 </article>
 
+<article id="brine_veg" class="recipe">
+<h1>Out of this World Tofurkey Brine</h1>
+<h2>This Recipe is vegetarian!</h2>
+<h3>Servings: 12</h3>
+<h4>"Even meat lovers will love this tofurkey!"</h4>
+<p>INGREDIENTS:</p>
+<p>2 cups water</p>
+<p>1 cup apple cider</p>
+<p>1 tablespoon apple cider vinegar</p>
+<p>2 sage leaves</p>
+<p>2 garlic cloves</p>
+<p>2 teaspoons salt</p>
+<p>1/2 teaspoons black pep</p>
+<p>1 tofurkey breast</p>
+<p>DIRECTIONS:</p>
+<p>1.   Combine all ingredients, except Tofurkey®, in a pot. Bring to a boil and then cool. Cover Tofurkey with brine and marinate overnight.</p>
+<p>2.   Preheat oven to 400°F. Remove Tofurkey breast from brine and dry. Rub with a touch of olive oil and roast for 30 minutes.</p>
+</article>
+
 <article id="chilli" class="recipe">
 <h1>White Chili IV</h1>
-<h2>Prep Time: 1 Hour</h2>
-<h2>Cook Time: 1 Hour 30 Minutes</h2>
-<h2>Ready In: 2 Hours 30 Minutes</h2>
-<h2>Servings: 8</h2>
-<h3>"Cubed chicken breast meat is slowly simmered with chile peppers, bell peppers, mushrooms, beans, white wine, herbs and spices in this chili-like soup."</h3>
+<h3>Prep Time: 1 Hour</h3>
+<h3>Cook Time: 1 Hour 30 Minutes</h3>
+<h3>Ready In: 2 Hours 30 Minutes</h3>
+<h3>Servings: 8</h3>
+<h4>"Cubed chicken breast meat is slowly simmered with chile peppers, bell peppers, mushrooms, beans, white wine, herbs and spices in this chili-like soup."</h4>
 <p>INGREDIENTS:</p>
 <p>1 tablespoon olive oil</p>
 <p>4 skinless, boneless chicken breast
@@ -175,7 +243,7 @@ minced</p>
 </article>
 
 <article id="pork" class="recipe">
-</h1>Glenn's Marinated Pork Shoulder</h1>
+<h1>Glenn's Marinated Pork Shoulder</h1>
 </h2>Prep Time: 15 Minutes</h2>
 </h2>Cook Time: 3 Hours</h2>
 </h2>Ready In: 7 Hours 15 Minutes</h2>
@@ -198,10 +266,11 @@ minced</p>
 
 <div id="mojito" class="recipe">
 <h1>Mojito Fruit Salad</h1>
-<h2>Prep Time: 20 Minutes</h2>
-<h2>Ready In: 1 Hour 20 Minutes</h2>
-<h2>ervings: 6</h2>
-<h3>"This uniquely refreshing minty salad has the refreshing flavors of mojitos and fresh fruit."</h3>
+<h2>This recipe is gluten free and vegetarian!</h2>
+<h3>Prep Time: 20 Minutes</h3>
+<h3>Ready In: 1 Hour 20 Minutes</h3>
+<h3>ervings: 6</h3>
+<h4>"This uniquely refreshing minty salad has the refreshing flavors of mojitos and fresh fruit."</h4>
 <p>INGREDIENTS:</p>
 <p>1 cup cubed seeded watermelon</p>
 <p>1 cup seedless grapes</p>
@@ -218,11 +287,12 @@ minced</p>
 
 <article id="soup" class="recipe">
 <h1>Vegan Hot and Sour Soup</h1>
-<h2>Prep Time: 45 Minutes</h2>
-<h2>Cook Time: 15 Minutes</h2>
-<h2>Ready In: 1 Hour</h2>
-<h2>Servings: 4</h2>
-<h3>"A mushroom and tofu extravaganza! The exotic ingredients in this enticing soup may be found in Asian grocery stores. Don't let the extra effort keep you from trying this tasty treat!"</h3>
+<h2>This recipe is vegetarian and gluten free!</h2>
+<h3>Prep Time: 45 Minutes</h3>
+<h3>Cook Time: 15 Minutes</h3>
+<h3>Ready In: 1 Hour</h3>
+<h3>Servings: 4</h3>
+<h4>"A mushroom and tofu extravaganza! The exotic ingredients in this enticing soup may be found in Asian grocery stores. Don't let the extra effort keep you from trying this tasty treat!"</h4>
 <p>INGREDIENTS:</p>
 <p>1 ounce dried wood ear mushrooms</p>
 <p>4 dried shiitake mushrooms</p>
