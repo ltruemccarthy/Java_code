@@ -1,0 +1,72 @@
+
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: ;
+    text-align: center;
+}
+
+h2{
+	font-size: 20px;
+	color: ;
+}
+
+.nav{
+	text-align: center;
+}
+.nav ul {
+        width: 100%;
+        clear:both;
+
+}
+.nav li {
+        display: inline-block;
+        text-decoration: none;
+        
+
+}
+.nav li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+}
+.nav li a:hover{
+        color: #000;
+}
+
+.open{
+	width: 100%;
+}
+
+.open img{
+	float: left;
+	clear: left;
+	width:40%;
+	padding-top: 5%;
+}
+
+.me-content{
+	float:right;
+	width: 60%;
+	padding-top: 10%;
+}
+
+.education{
+	margin-top: 40%;
+}
+.a{
+	max-width: 30%;
+	float:left;
+	padding-left: 20%;
+}
+
+.b{
+	max-width: 30%;
+	float:left;
+	
+}
+
