@@ -52,11 +52,11 @@ h2{
 .me-content{
 	float:right;
 	width: 60%;
-	padding-top: 10%;
 }
 
 .education{
 	margin-top: 40%;
+	background-color: black;
 }
 .a{
 	max-width: 30%;

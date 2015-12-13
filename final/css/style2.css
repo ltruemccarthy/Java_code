@@ -1,0 +1,209 @@
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: ;
+    text-align: center;
+}
+
+h2{
+	font-size: 20px;
+	color: ;
+}
+
+h3{
+	font-size: 30px;
+	line-height: 1px;
+}
+
+h4{
+	font-style: italic;
+}
+.nav{
+	text-align: center;
+	padding: 0px;
+}
+.nav ul {
+        width: 100%;
+        clear:both;
+
+}
+.nav li {
+        display: inline-block;
+        text-decoration: none;
+        
+
+}
+.nav a {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+        color: #4a543d;
+        font-size: 22px;
+}
+.nav a:hover{
+        color: #37568e;
+}
+
+.mytext{
+	float: right;
+	margin-top: -300px;
+}
+
+
+.education img{
+	max-width: 200px;
+}
+
+#ed{
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+#ed2{
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+#ed img{
+	float: left;
+}
+#ed2 img{
+	float: left;
+}
+#ed p{
+	padding-top: 100px;
+}
+#ed2 p{
+	padding-top: 85px;
+}
+
+.tt{
+	padding: 0;
+	margin: 0;
+}
+
+.tt ul li{
+  text-align: center;
+  list-style-type: none;
+  font-size: 24px;
+}
+
+#user{
+	width: 330px;
+	height: 400px;
+	float: left;
+	background: #dadccf;
+	margin: 50px;
+}
+
+#tech{
+	width: 330px;
+	height: 400px;
+	float:left;
+	background: #cbc3bc;
+	margin: 50px;
+}
+
+#marketing{
+	width: 330px;
+	height: 400px;
+	float:left;
+	background: #c9bccb;
+	margin: 50px;
+}
+
+
+.category {
+position:relative;
+display: inline-block;
+float:left;
+}
+
+.category2 {
+position:relative;
+display: inline-block;
+}
+.category3 {
+position:relative;
+display: inline-block;
+float:right;
+margin-right:50%;
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 80px 0;
+}
+section.module.parallax {
+  height: 350px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 290px;
+}
+section.module.parallax-1 {
+  background-image: url("../img/f4.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../img/f4.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/f4.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../img/f4.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 22px;
+  }
+  section.module p {
+    font-size: 18px;
+  }
+  section.module.parallax h1 {
+    font-size: 26px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 60px;
+  }
+}
+
